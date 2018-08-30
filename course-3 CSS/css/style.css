@@ -36,6 +36,15 @@ img {
   margin-bottom: 20px;
 }
 
+ul,
+ol {
+  margin: 30px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 /* Pseudo-classes ------------------ */
 
 a:link {
@@ -94,7 +103,6 @@ a:active {
   padding-top: 80px;
   padding-bottom: 70px;
   border-bottom: 2px solid #dfe2e6;
-  overflow: auto;
 }
 
 .callout {
@@ -151,4 +159,12 @@ a:active {
 
 .resorts {
   float: left;
+}
+
+/* Float clearfix --------------------------------------- */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
