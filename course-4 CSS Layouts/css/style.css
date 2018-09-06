@@ -74,7 +74,6 @@ a {
 }
 
 .main-header {
-  text-align: center;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   background: #3acec2;
@@ -103,15 +102,30 @@ a {
   }
 
   .name,
+  .main-nav,
   .main-nav li {
     display: inline-block;
   }
 
   .name {
     width: 240px;
+    margin-right: 50px;
   }
 
   .main-nav li {
-    margin-right: -5px;
+    margin-right: 12px;
   }
+
+  .col {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+    padding: 0 1em;
+  }
+
+  /* .primary,
+  .secondary {
+    margin-right: -5px;
+  } */
 }
