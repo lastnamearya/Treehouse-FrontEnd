@@ -110,4 +110,8 @@ a {
   .name {
     width: 240px;
   }
+
+  .main-nav li {
+    margin-right: -5px;
+  }
 }
