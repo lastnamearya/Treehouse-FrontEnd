@@ -115,9 +115,53 @@ img {
 @media (min-width: 769px) {
   /* ---- Float clearfix ---- */
 
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name,
+  .col {
+    float: left;
+  }
+
+  .primary,
+  .secondary {
+    width: 50%;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .tagline {
+    font-size: 1.4em;
+  }
+
   .clearfix::after {
     content: " ";
     display: table;
     clear: both;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    width: 80%;
+    max-width: 1150px;
+  }
+
+  .primary {
+    width: 40%;
+  }
+
+  .secondary,
+  .tertiary {
+    width: 30%;
   }
 }
