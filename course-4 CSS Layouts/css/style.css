@@ -1,57 +1,208 @@
 /* ================================= 
-  Page Styles
+  Base Element Styles
 ==================================== */
+
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Varela Round", sans-serif;
   line-height: 1.6;
-  padding: 2em;
-  background: #f2f2f2;
+  color: #3a3a3a;
 }
+
+p {
+  font-size: 0.95em;
+  margin-bottom: 1.8em;
+}
+
+h2,
+h3,
 a {
-  color: #3acec2;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  padding: 10px 15px;
-}
-a:hover {
   color: #093a58;
 }
-.main-header {
-  background: #3acec2;
-  padding: 0.001em;
+
+h2,
+h3,
+h4 {
+  margin-top: 0;
 }
-.main-nav {
-  width: 50%;
-  padding: 1.65em;
-  margin: 0 auto;
+
+h4 {
+  margin-bottom: 0.4em;
 }
-.main-nav li {
-  background: #fff;
-  border: solid 1px #093a58;
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  line-height: 0;
+  position: relative;
+}
+
+figcaption {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #fff;
+  padding: 1em;
+  background: rgba(19, 43, 102, 0.85);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /* ================================= 
-  Positioning Styles
+  Base Layout Styles
 ==================================== */
 
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.25em;
+  margin: 0;
+}
+
 .main-nav {
-  position: relative;
-  margin-top: 100px;
+  margin-top: 5px;
 }
 
-.ice-cream {
-  position: absolute;
-  top: 0;
-  left: 0;
+.name a,
+.main-nav a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
 }
 
-.tea {
+.main-nav a {
+  font-size: 0.95em;
+  color: #3acec2;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.banner,
+.main-footer {
+  text-align: center;
+}
+
+.banner {
+  color: #fff;
+  background: #3acec2;
+  padding: 3.2em 0;
+  margin-bottom: 60px;
+}
+
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.main-footer {
+  background: #d9e4ea;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+  width: 190px;
+}
+
+.headline {
+  margin-bottom: 0;
+}
+
+.icon-location {
+  width: 35px;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: -15px;
+  right: -15px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  body {
+    padding-top: 68px;
+  }
+
+  .main-header {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    top: 0;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name,
+  .col {
+    float: left;
+  }
+
+  .primary,
+  .secondary {
+    width: 50%;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .tagline {
+    font-size: 1.4em;
+  }
+
+  /* ---- Float clearfix ---- */
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    width: 80%;
+    max-width: 1150px;
+  }
+
+  .primary {
+    width: 40%;
+  }
+
+  .secondary,
+  .tertiary {
+    width: 30%;
+  }
 }
