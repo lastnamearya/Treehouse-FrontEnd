@@ -1,3 +1,9 @@
 /* ================================= 
   Flexbox
 ==================================== */
+
+.container {
+  /* It'll create a block-level flex container */
+  display: inline-flex;
+  height: 300px;
+}
