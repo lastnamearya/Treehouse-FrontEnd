@@ -5,11 +5,21 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   justify-content: space-around;
 }
 
+.item-3 {
+  order: -2;
+}
+
+.item-6 {
+  order: -1;
+}
+
 .item-1 {
-  /* It'll going to override the justify-content to some extent like ~ It inserts extra space between the first flex item right side and the remaining items */
-  margin-right: auto;
+  order: 1;
+}
+
+.item-2 {
+  order: 2;
 }
