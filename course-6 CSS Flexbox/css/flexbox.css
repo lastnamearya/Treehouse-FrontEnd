@@ -9,9 +9,6 @@
 
 .item {
   flex-grow: 1;
-}
-
-/* Noticable only in the wider screens  */
-.item-3 {
-  flex-grow: 2;
+  /* Flex items will display at an equal size, when they're 200 pixels or wider, if they are narrower then borwser will redistribute the space */
+  flex-basis: 200px;
 }
