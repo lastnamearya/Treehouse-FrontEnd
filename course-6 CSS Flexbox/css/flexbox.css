@@ -5,16 +5,15 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  height: 450px;
+  /* Now height will no longer stretch from top to bottom */
+  align-items: flex-end; /* flex-start */
 }
 
 .item {
-  /* flex-grow: 1;
-  flex-basis: 100px; */
-
-  flex: 1 200px; /* flex-basis & flex-shrink properties are optional */
+  flex: 1;
 }
 
 .item-2 {
-  /* item-2 will get twice as much space but only in the wider screens, be specific here with only using flex-grow otherwise using flex shorthand sets other value to zero. */
-  flex-grow: 2;
+  flex: 2;
 }
