@@ -3,7 +3,6 @@
 ==================================== */
 
 .container {
-  /* It'll create a block-level flex container */
-  display: inline-flex;
-  height: 300px;
+  display: flex;
+  flex-direction: row-reverse;
 }
