@@ -6,14 +6,20 @@
   display: flex;
   flex-wrap: wrap;
   height: 450px;
-  /* Now height will no longer stretch from top to bottom */
-  align-items: flex-end; /* flex-start */
 }
 
 .item {
   flex: 1;
 }
 
+.item-1 {
+  align-self: flex-end;
+}
+
 .item-2 {
   flex: 2;
+}
+
+.item-4 {
+  align-self: center;
 }
