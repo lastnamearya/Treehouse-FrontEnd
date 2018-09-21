@@ -8,3 +8,8 @@
   /* justify-content: space-between; */
   justify-content: space-around;
 }
+
+.item-1 {
+  /* It'll going to override the justify-content to some extent like ~ It inserts extra space between the first flex item right side and the remaining items */
+  margin-right: auto;
+}
