@@ -10,12 +10,20 @@
   }
 
   .col {
-    flex: 1;
+    flex: 1 50%;
   }
 
   .main-header {
     flex-direction: column;
     align-items: center;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .secondary {
+    order: -1;
   }
 }
 
@@ -25,7 +33,11 @@
     justify-content: space-between;
   }
 
+  .col {
+    flex-basis: 0;
+  }
+
   .primary {
-    flex: 2;
+    flex-grow: 1.4;
   }
 }
