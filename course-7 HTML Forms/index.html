@@ -16,19 +16,31 @@
 
         <h1>Sign Up</h1>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
+        <legend><span class="number">1</span></legend>
 
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" name="user_email">
+        <fieldset>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="user_password">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
 
-        <!-- Sometimes we want to input more than a line of text -->
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email">
 
-        <label for="bio">Biography:</label>
-        <textarea id="bio" name="user_bio"></textarea>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="user_password">
+
+        </fieldset>
+
+        <legend><span class="number">2</span></legend>
+
+        <fieldset>
+
+            <!-- Sometimes we want to input more than a line of text -->
+
+            <label for="bio">Biography:</label>
+            <textarea id="bio" name="user_bio"></textarea>
+
+        </fieldset>
 
         <button type="submit">Sign Up</button>
 
